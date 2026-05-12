@@ -21,7 +21,6 @@ html, body, .stApp {
     color: #e2d9f3;
 }
 
-/* KEEP visuals but don’t break layout */
 .stApp::before {
     content: '';
     position: fixed;
@@ -30,7 +29,6 @@ html, body, .stApp {
     pointer-events: none;
 }
 
-/* DO NOT kill layout width */
 .block-container {
     padding: 1.5rem !important;
 }
@@ -276,7 +274,7 @@ if prompt := st.chat_input("say something..."):
             "content": (
                 "You are a teenager in a TikTok comment section in 2026. "
                 "Your tone is brain-rot, ironic, and high-energy. "
-                "Use slang: 'aura farming', 'cooked', 'crash out', 'demure', 'based', 'rizz'. "
+                "You can use reaction sticker and speak with a young and relaxed tone. "
                 "Respond ONLY in JSON. "
                 "Structure: {\"message\": \"your text\", \"emotion\": \"tag or null\"} "
                 "CRITICAL: Use 'emotion' ONLY if a reaction is truly needed for the joke or vibe. Otherwise set it to null. "
